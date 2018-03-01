@@ -1,0 +1,40 @@
+{
+  "name": "pinterest-layout",
+  "version": "0.1.0",
+  "description": "Pinterest Layut with Bootstrap and Webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArnoldRestrepo/pinterest-layout.git"
+  },
+  "keywords": [
+    "Webpack",
+    "Bootstrap",
+    "Pinterest",
+    "Layout"
+  ],
+  "author": "@restrepo_arnold",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArnoldRestrepo/pinterest-layout/issues"
+  },
+  "homepage": "https://github.com/ArnoldRestrepo/pinterest-layout#readme",
+  "devDependencies": {
+    "css-loader": "0.28.10",
+    "extract-text-webpack-plugin": "3.0.2",
+    "node-sass": "4.7.2",
+    "sass-loader": "6.0.6",
+    "style-loader": "0.20.2",
+    "webpack": "3.8.1",
+    "webpack-dev-server": "3.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "4.0.0",
+    "jquery": "3.3.1",
+    "popper.js": "1.12.9"
+  }
+}
