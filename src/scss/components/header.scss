@@ -1,0 +1,50 @@
+/*
+* Component: Header
+**/
+
+
+/* Header */
+.Header {
+    background: $white;
+    padding: 1.2rem 1.5rem;
+    border-bottom: 1px solid $gray;
+}
+/* Logo */
+.Logo{
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    transition: $transition;
+}
+.Logo__svg{fill: $red;}
+.Logo:hover{background: $gray;}
+.Logo:focus,.Logo:active{box-shadow: 0 0 0 4px rgba(0,132,255,.5);outline: none;}
+
+/*Form*/
+.Form{
+    width: 100%;
+    height: 48px;
+}
+.Form__search{
+    padding: 1rem;
+    height: 48px;
+    background: $gray;
+    border-radius: 4px 0 0 4px;
+}
+.Form__search__svg{
+    fill: $darkGray;
+}
+.Form__input{
+    width: 100%;
+    height: 100%;
+    background: $gray;
+    border: none;
+    padding: 1rem;
+    border-radius: 0 4px 4px 0;
+}
+
+.Logo,
+.Form,
+.Nav__list__item {
+    display: inline-block
+}
