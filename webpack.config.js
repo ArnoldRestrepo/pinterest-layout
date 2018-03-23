@@ -20,15 +20,15 @@ const configure = {
                         {
                             loader: 'css-loader',
                             options: {
-                                url: true,
-                                minimize: true,
-                                sourceMap: true
+                                url: false,
+                                minimize: false,
+                                sourceMap: false
                             }
                         },
                         {
                             loader: 'sass-loader',
                             options: {
-                                sourceMap: true
+                                sourceMap: false
                             }
                         }
                     ]

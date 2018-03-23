@@ -12,8 +12,8 @@
     <!-- Header -->
     <div class="container-fluid ">
         <div class="row">
-            <div class="col-12 d-flex align-items-center  justify-content-between Header">
-                <div class="">
+            <div class="col-12 d-flex  align-items-center justify-content-between Header">
+                <div class=" d-flex align-items-center">
                     <a href="#" class="Logo d-flex align-items-center justify-content-center">
                         <svg class="Logo__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" role="img">
                             <title></title>
@@ -21,7 +21,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="form-group Form d-flex justify-content-start align-items-center">
+                <div class="Form form-group  d-flex justify-content-start align-items-center">
                     <div class="Form__search">
                         <svg  class="Form__search__svg" height="20" width="20" viewBox="0 0 24 24" aria-hidden="true" aria-label="" role="img">
                             <title></title>
@@ -32,12 +32,33 @@
                     <input type="text" class="Form__input" placeholder="Buscar">
                 </div>
                 <div class="Nav">
-                    <ul class="Nav__list">
-                        <li class="Nav__list__item"><a href="#">Inicio</a></li>
-                        <li class="Nav__list__item"><button> <img src="https://i.pinimg.com/75x75_RS/e0/bb/8f/e0bb8f3e343a1aa0b70b2c2958213d1d.jpg" alt=""> Arnold</button></li>
-                        <li class="Nav__list__item"> <button><img src="img/menu.svg" alt=""></button></li>
-                        <li class="Nav__list__item"> <button><img src="img/comments.svg" alt=""></button></li>
-                        <li class="Nav__list__item"> <button><img src="img/menu-two.svg" alt=""></button></li>
+                    <ul class="Nav__list d-flex align-items-center justify-content-between">
+                        <li class="Nav__list__item"><a href="#" class="Nav__list__item__ancle">Inicio</a></li>
+                        <li class="Nav__list__item">
+                            <button class="Profile">
+                                <div class="Profile__container">
+                                    <img src="https://i.pinimg.com/75x75_RS/e0/bb/8f/e0bb8f3e343a1aa0b70b2c2958213d1d.jpg" alt="" class="Profile__img"> 
+                                </div> 
+                                <div class="Profile__container">
+                                    <span class="Profile__name">Arnold</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="Nav__list__item .is--circle">
+                            <button class="Menu">
+                                <img src="img/menu.svg" alt="" class="Menu__img">
+                            </button>
+                        </li>
+                        <li class="Nav__list__item .is--circle"> 
+                            <button class="Menu">
+                                <img class="Menu__img" src="img/comments.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="Nav__list__item .is--circle">
+                            <button class="Menu">
+                                <img class="Menu__img" src="img/menu-two.svg" alt="">
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>
