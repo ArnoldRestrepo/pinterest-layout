@@ -1,14 +1,15 @@
 const path = require("path");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const configure = {
     entry: path.resolve(__dirname, "src/app.js"),
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "js/[name].js",
-        publicPath: "./dist",
+        publicPath: "./dist"
     },
-    watch: true,
+    devtool: "source-map", 
     module: {
         rules: [
             {
@@ -19,28 +20,47 @@ const configure = {
                         {
                             loader: 'css-loader',
                             options: {
-                                // If you are having trouble with urls not resolving add this setting.
-                                // See https://github.com/webpack-contrib/css-loader#url
                                 url: false,
-                                minimize: true,
-                                sourceMap: true
+                                minimize: false,
+                                sourceMap: false
                             }
                         },
                         {
                             loader: 'sass-loader',
                             options: {
-                                sourceMap: true
+                                sourceMap: false
                             }
                         }
                     ]
                 })
+            },
+            {
+                test: /\.js$/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['es2015']
+                    }
+                }
+            },
+            {
+                test: /\.(jpg|png|gif)/,
+                use: {
+                    loader: 'url-loader',
+                    options: {
+                        limit: 100000
+                    }
+                }
             }
         ]
     },
     plugins: [
         // new ExtractTextPlugin("styles.css")
-        new ExtractTextPlugin("css/[name].css")
-    ]
+        new ExtractTextPlugin("css/[name].css"),
+        new UglifyJsPlugin({
+            include: /\.js$/,
+        })
+    ],
 }
 
 module.exports = configure;

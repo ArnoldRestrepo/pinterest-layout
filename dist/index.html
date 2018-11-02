@@ -1,27 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pinterest Layout</title>
+    <title>Pinterest</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="https://s.pinimg.com/webapp/style/images/favicon-9f8f9adf.png" type="image/png">
 </head>
 <body>
     <!-- Header -->
-    <div class="container-fluid">
+    <div class="container-fluid ">
         <div class="row">
-            <div class="col-12 d-flex Header p-0">
-                <div class="Logo">
-                    <svg class="red" height="28" width="28" viewBox="0 0 24 24" aria-hidden="true" aria-label="" role="img">
-                        <title></title>
-                        <path d="M0.00,12.00 C0.00,17.12 3.21,21.50 7.73,23.22 C7.62,22.28 7.50,20.74 7.75,19.65 C7.97,18.72 9.16,13.71 9.16,13.71 C9.16,13.71 8.80,13.00 8.80,11.94 C8.80,10.28 9.76,9.04 10.96,9.04 C11.98,9.04 12.47,9.80 12.47,10.72 C12.47,11.75 11.82,13.28 11.48,14.70 C11.20,15.89 12.08,16.86 13.25,16.86 C15.37,16.86 17.01,14.62 17.01,11.39 C17.01,8.53 14.95,6.53 12.02,6.53 C8.62,6.53 6.62,9.08 6.62,11.71 C6.62,12.74 7.02,13.84 7.51,14.44 C7.61,14.56 7.62,14.66 7.59,14.78 C7.50,15.16 7.30,15.97 7.26,16.14 C7.21,16.35 7.09,16.40 6.86,16.30 C5.37,15.60 4.44,13.42 4.44,11.67 C4.44,7.90 7.18,4.44 12.33,4.44 C16.48,4.44 19.70,7.39 19.70,11.34 C19.70,15.46 17.10,18.77 13.50,18.77 C12.29,18.77 11.15,18.14 10.76,17.40 C10.76,17.40 10.16,19.68 10.02,20.24 C9.73,21.32 8.95,22.69 8.47,23.47 C9.58,23.82 10.77,24.00 12.00,24.00 C18.63,24.00 24.00,18.63 24.00,12.00 C24.00,5.37 18.63,0.00 12.00,0.00 C5.37,0.00 0.00,5.37 0.00,12.00"></path>
-                    </svg>
+            <div class="col-12 d-flex  align-items-center justify-content-between Header">
+                <div class=" d-flex align-items-center">
+                    <a href="#" class="Logo d-flex align-items-center justify-content-center">
+                        <svg class="Logo__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" role="img">
+                            <title></title>
+                            <path d="M0.00,12.00 C0.00,17.12 3.21,21.50 7.73,23.22 C7.62,22.28 7.50,20.74 7.75,19.65 C7.97,18.72 9.16,13.71 9.16,13.71 C9.16,13.71 8.80,13.00 8.80,11.94 C8.80,10.28 9.76,9.04 10.96,9.04 C11.98,9.04 12.47,9.80 12.47,10.72 C12.47,11.75 11.82,13.28 11.48,14.70 C11.20,15.89 12.08,16.86 13.25,16.86 C15.37,16.86 17.01,14.62 17.01,11.39 C17.01,8.53 14.95,6.53 12.02,6.53 C8.62,6.53 6.62,9.08 6.62,11.71 C6.62,12.74 7.02,13.84 7.51,14.44 C7.61,14.56 7.62,14.66 7.59,14.78 C7.50,15.16 7.30,15.97 7.26,16.14 C7.21,16.35 7.09,16.40 6.86,16.30 C5.37,15.60 4.44,13.42 4.44,11.67 C4.44,7.90 7.18,4.44 12.33,4.44 C16.48,4.44 19.70,7.39 19.70,11.34 C19.70,15.46 17.10,18.77 13.50,18.77 C12.29,18.77 11.15,18.14 10.76,17.40 C10.76,17.40 10.16,19.68 10.02,20.24 C9.73,21.32 8.95,22.69 8.47,23.47 C9.58,23.82 10.77,24.00 12.00,24.00 C18.63,24.00 24.00,18.63 24.00,12.00 C24.00,5.37 18.63,0.00 12.00,0.00 C5.37,0.00 0.00,5.37 0.00,12.00"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="Form form-group  d-flex justify-content-start align-items-center">
+                    <div class="Form__search">
+                        <svg  class="Form__search__svg" height="20" width="20" viewBox="0 0 24 24" aria-hidden="true" aria-label="" role="img">
+                            <title></title>
+                            <path d="M10.00,16.00 C6.69,16.00 4.00,13.31 4.00,10.00 C4.00,6.69 6.69,4.00 10.00,4.00 C13.31,4.00 16.00,6.69 16.00,10.00 C16.00,13.31 13.31,16.00 10.00,16.00 M23.12,18.88 L18.86,14.62 C19.59,13.24 20.00,11.67 20.00,10.00 C20.00,4.48 15.52,0.00 10.00,0.00 C4.48,0.00 0.00,4.48 0.00,10.00 C0.00,15.52 4.48,20.00 10.00,20.00 C11.67,20.00 13.24,19.59 14.62,18.86 L18.88,23.12 C20.05,24.29 21.95,24.29 23.12,23.12 C24.29,21.95 24.29,20.05 23.12,18.88"
+                                data-reactid="42"></path>
+                        </svg>
+                    </div>
+                    <input type="text" class="Form__input" placeholder="Buscar">
+                </div>
+                <div class="Nav">
+                    <ul class="Nav__list d-flex align-items-center justify-content-between">
+                        <li class="Nav__list__item"><a href="#" class="Nav__list__item__ancle">Inicio</a></li>
+                        <li class="Nav__list__item">
+                            <button class="Profile">
+                                <div class="Profile__container">
+                                    <img src="https://i.pinimg.com/75x75_RS/e0/bb/8f/e0bb8f3e343a1aa0b70b2c2958213d1d.jpg" alt="" class="Profile__img"> 
+                                </div> 
+                                <div class="Profile__container">
+                                    <span class="Profile__name">Arnold</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="Nav__list__item .is--circle">
+                            <button class="Menu">
+                                <img src="img/menu.svg" alt="" class="Menu__img">
+                            </button>
+                        </li>
+                        <li class="Nav__list__item .is--circle"> 
+                            <button class="Menu">
+                                <img class="Menu__img" src="img/comments.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="Nav__list__item .is--circle">
+                            <button class="Menu">
+                                <img class="Menu__img" src="img/menu-two.svg" alt="">
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
     <!-- /Header -->
+    <!-- Main -->
+
+    <!-- /Main -->
 
     <script src="js/main.js"></script>
 </body>

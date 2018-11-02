@@ -1,0 +1,119 @@
+/*
+* Component: Header
+**/
+
+
+/* Header */
+.Header {
+    background: $white;
+    padding: .5rem 1rem;
+    border-bottom: 1px solid $gray;
+}
+/* Logo */
+.Logo{
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    transition: $transition;
+}
+.Logo__svg{fill: $red;}
+// .Logo_svg:hover{background: $gray;}
+// .Logo_svg:focus,.Logo_svg:active{box-shadow: 0 0 0 4px rgba(0,132,255,.5);outline: none;}
+
+/*Form*/
+.Form{
+    width: 100%;
+    height: 48px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.Form__search{
+    padding: 1rem;
+    height: 48px;
+    background: $gray;
+    border-radius: 6px 0 0 6px;
+}
+.Form__search__svg{
+    fill: $darkGray;
+}
+.Form__input{
+    width: 100%;
+    height: 100%;
+    background: $gray;
+    border: none;
+    padding: 1rem;
+    border-radius: 0 6px 6px 0;
+}
+.Form__input[placeholder]{
+    color: #9d9d9d;
+    font-family: $title;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.Logo,
+.Form,
+.Nav__list__item {
+    display: inline-block
+}
+/*Nav*/
+.Nav{
+    
+}
+.Nav__list{
+    padding: 0;
+    margin-bottom: 0;
+}
+.Nav__list__item{
+    margin: 0 .3rem;
+    padding: 12px;
+    line-height: 1.6;
+    transition: $transition;
+}
+.Nav__list__item:hover{
+    background: $gray;
+    cursor: pointer;
+    @include border-radius(70px);
+}
+.Nav__list__item__ancle{
+    color: $black;
+    font-family: $title;
+    font-weight: bolder;
+    padding: 0 10px;
+}
+.Nav__list__item__ancle:hover{
+    text-decoration: none;
+    color: $black;
+}
+
+/* Profile */
+.Profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.Profile > *{cursor: pointer;}
+
+.Profile__img{
+    width: 2rem;
+    height: 2rem;
+    @include border-radius(100px);
+    margin-right: .9rem;
+}
+.Profile__img::after{
+    content: '';
+    box-shadow: 0px -1px 0px 9px $white;
+}
+.Profile__name{
+    color: $darkGray;
+    font-family: $title;
+    font-weight: bolder;
+}
+.Menu{
+    background: transparent;
+    border: none;
+}
+.Menu{cursor: pointer;}
